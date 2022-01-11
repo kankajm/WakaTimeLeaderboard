@@ -18,7 +18,7 @@ function getFiveMostUsedLanguages(languages) {
         return "None";
     }
     let final = "";
-    for (let i = 0; i < 5; i++) {
+    for (let i in languages) {
         final += languages[i].name + " \n";
     }
     return final;
