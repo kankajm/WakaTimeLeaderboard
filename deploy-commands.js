@@ -11,10 +11,10 @@ const token = process.env.DISCORD_TOKEN;
 
 const commands = [
     new SlashCommandBuilder().setName('summary').setDescription('Replies with overall summary'),
-    /*new SlashCommandBuilder().setName('user').setDescription('Get stats about specific user').addStringOption(option =>
+    new SlashCommandBuilder().setName('user').setDescription('Get stats about specific user').addStringOption(option =>
         option.setName('username')
             .setDescription('The username of the user to get the summary of.')
-            .setRequired(true)),*/
+            .setRequired(true)),
 ]
 
 const rest = new REST({ version: '9' }).setToken(token);
