@@ -23,6 +23,11 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
+client.on("ready", () => {
+    client.user.setActivity("/summary", { type: "PLAYING" });
+    client.user.setStatus("dnd");
+});
+
 dotenv.config();
 
 client.login(process.env.DISCORD_TOKEN).then(() => {

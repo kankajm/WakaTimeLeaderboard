@@ -47,7 +47,7 @@ async function singleUserEmbed(user, username) {
             { name: '\u200B', value: '\u200B' },
             { name: 'Total time', value: `${putInBackticks(user.human_readable_total)}`, inline: true },
             { name: 'Daily average', value: `${putInBackticks(user.human_readable_daily_average)}`, inline: true },
-            { name: 'Favourite language', value: `${putInBackticks(getMostFavouriteLanguage(user.languages))}`, inline: true },
+            { name: 'Favorite language', value: `${putInBackticks(getMostFavouriteLanguage(user.languages))}`, inline: true },
         )
         .addField('Top languages', `\`\`\`${getFiveMostUsedLanguages(user.languages)}\`\`\``, true)
         .setTimestamp();
@@ -73,8 +73,6 @@ async function summaryEmbed(data) {
             inline: false
         });
     }
-    return embed;
-    // Name, total time, daily average
 }
 
 
