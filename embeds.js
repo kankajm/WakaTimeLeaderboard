@@ -73,6 +73,7 @@ async function summaryEmbed(data) {
             inline: false
         });
     }
+    return embed;
 }
 
 
